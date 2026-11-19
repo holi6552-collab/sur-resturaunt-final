@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student redesign of SUR Restaurant &amp; Lounge in West Hollywood.">
+    <title>Menu | SUR Restaurant &amp; Lounge</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<!-- Header -->
+<header class="site-header">
+    <div class="header-inner">
+
+        <p class="site-brand">
+            <strong>SUR Restaurant &amp; Lounge</strong>
+        </p>
+
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation menu"
+                aria-controls="main-navigation"
+                aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true">☰</span>
+        </button>
+
+        <!-- Navigation -->
+        <nav id="main-navigation"
+             class="site-nav"
+             aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html" aria-current="page">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h1>Our Menu</h1>
+        <p>Explore appetizers, salads, main dishes, pasta, desserts, and weekend brunch at SUR. Prices and availability may change.</p>
+
+        <img src="images/sur-outdoor-dining.jpg"
+             alt="SUR tables set for dining with flowers and chandeliers"
+             width="600">
+
+        <p>
+            Jump to:
+            <a href="#appetizers">Appetizers</a> |
+            <a href="#salads">Salads</a> |
+            <a href="#main-courses">Main Courses</a> |
+            <a href="#pasta">Pasta</a> |
+            <a href="#desserts">Desserts</a> |
+            <a href="#brunch">Brunch</a>
+        </p>
+    </section>
+
+    <!-- Appetizers -->
+    <section id="appetizers">
+        <h2>Appetizers</h2>
+
+        <article>
+            <h3>Fried Goat Cheese Balls — $18</h3>
+            <p>Mango chutney and crostini.</p>
+        </article>
+
+        <article>
+            <h3>Seasonal Veggie Soup — $14</h3>
+            <p>Seasonal vegetable soup.</p>
+            <p><small>Dietary information: Plant based, gluten-free</small></p>
+        </article>
+
+        <article>
+            <h3>Mezze Platter — $24</h3>
+            <p>Hummus, whipped ricotta, beets, lentils, and spiced pita.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Hass Avocado Guacamole — $16</h3>
+            <p>Avocado, cilantro, lime juice, and tortilla chips.</p>
+            <p><small>Dietary information: Plant based</small></p>
+        </article>
+    </section>
+
+    <!-- Salads -->
+    <section id="salads">
+        <h2>Salads</h2>
+
+        <article>
+            <h3>Romaine Hearts Caesar — $20</h3>
+            <p>Romaine with cheese, herb breadcrumbs, and crostini.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Farmer’s Market Salad — $20</h3>
+            <p>Radicchio, romaine, pistachios, cranberries, and citrus vinaigrette.</p>
+            <p><small>Dietary information: Plant based; contains nuts</small></p>
+        </article>
+
+        <article>
+            <h3>Farro Salad — $22</h3>
+            <p>Arugula, apple, pepitas, beets, and apple cider vinaigrette.</p>
+            <p><small>Dietary information: Plant based; contains nuts</small></p>
+        </article>
+    </section>
+
+    <!-- Main Courses -->
+    <section id="main-courses">
+        <h2>Main Courses</h2>
+
+        <article>
+            <h3>Seared Salmon — $40</h3>
+            <p>Salmon with melted leeks and heirloom potatoes.</p>
+            <p><small>Dietary information: Gluten-free</small></p>
+        </article>
+
+        <article>
+            <h3>Meyer Lemon Glazed Boneless Half Chicken — $38</h3>
+            <p>Chicken with roasted carrots and red pepper sauce.</p>
+            <p><small>Dietary information: Gluten-free</small></p>
+        </article>
+
+        <article>
+            <h3>Vegan Curry — $30</h3>
+            <p>Seasonal vegetables, couscous, raisins, and grilled flatbread.</p>
+            <p><small>Dietary information: Plant based; contains nuts</small></p>
+        </article>
+
+        <article>
+            <h3>Grilled Prime Skirt Steak — $34</h3>
+            <p>Steak with chimichurri, aioli, and rosemary potatoes.</p>
+        </article>
+    </section>
+
+    <!-- Pasta -->
+    <section id="pasta">
+        <h2>Pasta</h2>
+
+        <article>
+            <h3>Truffle Potato Gnocchi — $34</h3>
+            <p>Gnocchi with Grana Padano and chives.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Rigatoni a la Norma — $28</h3>
+            <p>Rigatoni with tomato sauce, ricotta, eggplant, and basil.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Lasagne Al Forno — $30</h3>
+            <p>Lasagna with beef Bolognese, basil, and Parmesan.</p>
+        </article>
+    </section>
+
+    <!-- Desserts -->
+    <section id="desserts">
+        <h2>Desserts</h2>
+
+        <article>
+            <h3>SUR Famous Blackberry Cobbler — $16</h3>
+            <p>Blackberry cobbler with vanilla ice cream.</p>
+        </article>
+
+        <article>
+            <h3>Smoked Crème Brûlée — $16</h3>
+            <p>Crème brûlée with mixed berries.</p>
+            <p><small>Dietary information: Gluten-free</small></p>
+        </article>
+
+        <article>
+            <h3>Vegan Seasonal Sorbet — $16</h3>
+            <p>Seasonal sorbet with berries and coconut crumble.</p>
+            <p><small>Dietary information: Plant based</small></p>
+        </article>
+    </section>
+
+    <!-- Brunch -->
+    <section id="brunch">
+        <h2>Brunch</h2>
+
+        <article>
+            <h3>Croissant French Toast — $20</h3>
+            <p>French toast with maple syrup and mixed berries.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Avocado Toast — $20</h3>
+            <p>Sourdough toast with avocado, tomatoes, onion, and egg.</p>
+            <p><small>Dietary information: Vegetarian</small></p>
+        </article>
+
+        <article>
+            <h3>Buttermilk Pancakes — $20</h3>
+            <p>Pancakes with maple syrup and fresh berries.</p>
+            <p><small>Dietary information: Vegetarian; contains nuts</small></p>
+        </article>
+    </section>
+
+    <!-- Reservation -->
+    <section>
+        <h2>Make a Reservation</h2>
+
+        <p>
+            <a href="https://www.opentable.com/r/sur-restaurant-west-hollywood"
+               target="_blank"
+               rel="noopener noreferrer">
+                Book a Table
+            </a>
+        </p>
+
+        <p>
+            <small>
+                Menu information adapted from SUR's official dinner and brunch menus.
+                See
+                <a href="https://www.surrestaurant.com/menus/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    the current official menu
+                </a>.
+            </small>
+        </p>
+    </section>
+
+</main>
+
+<!-- Footer -->
+<footer>
+    <p>SUR Restaurant &amp; Lounge | 606-614 N Robertson Blvd, West Hollywood, CA 90069</p>
+
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="menu.html">Menu</a> |
+        <a href="contact.html">Contact</a>
+    </p>
+
+    <p>Student redesign project. Not an official SUR website.</p>
+</footer>
+
+</body>
+</html>

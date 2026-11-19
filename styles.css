@@ -1,0 +1,629 @@
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+/* Original Color Palette */
+:root {
+    --burgundy: #6B2638;
+    --cream: #F5F0E8;
+    --gold: #B49A69;
+    --charcoal: #292321;
+    --white: #FFFFFF;
+}
+
+/* General Styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    line-height: 1.25;
+    color: var(--burgundy);
+}
+
+h1 { font-size: 48px; }
+h2 { font-size: 36px; }
+h3 { font-size: 24px; }
+
+p { margin: 0 0 16px; }
+small { font-size: 13px; }
+
+a {
+    color: var(--burgundy);
+}
+
+a:hover {
+    color: var(--gold);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--gold);
+    outline-offset: 4px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+}
+
+/* Header */
+.site-header, header {
+    background-color: var(--burgundy);
+    color: var(--cream);
+    border-bottom: 3px solid var(--gold);
+    padding: 20px 32px;
+}
+
+.header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.site-brand,
+header > p {
+    margin: 0;
+}
+
+.site-brand strong,
+header strong {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--cream);
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Navigation - Desktop */
+.site-nav {
+    display: flex;
+    align-items: center;
+    width: auto;
+}
+
+.site-nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.site-nav a {
+    display: block;
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+    color: var(--gold);
+}
+
+/* Hide Hamburger on Desktop */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: var(--cream);
+    border: 2px solid var(--gold);
+    padding: 8px 14px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.menu-toggle:hover {
+    background-color: var(--gold);
+    color: var(--burgundy);
+}
+
+/* Main Content */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 32px;
+}
+
+section {
+    margin-bottom: 64px;
+}
+
+section > h1,
+section > h2 {
+    margin-top: 0;
+}
+
+section > h2 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+section > h2::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: var(--gold);
+    margin: 16px auto 0;
+}
+
+/* Homepage Hero */
+.hero {
+    background-color: var(--white);
+    text-align: center;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid rgba(180,154,105,0.4);
+    box-shadow: 0 8px 32px rgba(41,35,33,0.08);
+}
+
+.hero > img {
+    width: 100%;
+    height: 480px;
+    object-fit: cover;
+}
+
+.hero-copy {
+    padding: 48px 32px;
+}
+
+.hero h1 {
+    margin: 0 0 16px;
+    font-size: 48px;
+}
+
+.hero-copy > p:not(.hero-actions) {
+    max-width: 700px;
+    margin: 0 auto 16px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/* Buttons */
+.button,
+.btn-primary,
+.btn-secondary {
+    display: inline-block;
+    padding: 14px 28px;
+    border-radius: 3px;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+/* Reservation Button */
+.button-primary,
+.btn-primary {
+    background-color: var(--burgundy);
+    color: var(--cream);
+    border: 2px solid var(--burgundy);
+}
+
+.button-primary:hover,
+.btn-primary:hover {
+    background-color: var(--charcoal);
+    border-color: var(--charcoal);
+    color: var(--cream);
+}
+
+/* Explore Menu Button */
+.button-secondary,
+.btn-secondary {
+    background-color: var(--cream);
+    color: var(--burgundy);
+    border: 2px solid var(--burgundy);
+}
+
+.button-secondary:hover,
+.btn-secondary:hover {
+    background-color: var(--burgundy);
+    color: var(--cream);
+}
+
+/* Other Action Links */
+main a[href*="opentable"]:not(.button),
+main a[href="menu.html"]:not(.button),
+main a[href="contact.html"]:not(.button) {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 2px solid var(--burgundy);
+    color: var(--burgundy);
+    text-decoration: none;
+    font-weight: 700;
+    margin: 8px 8px 8px 0;
+}
+
+main a[href*="opentable"]:not(.button) {
+    background-color: var(--burgundy);
+    color: var(--cream);
+}
+
+main a[href*="opentable"]:not(.button):hover {
+    background-color: var(--charcoal);
+    color: var(--cream);
+}
+
+main a[href="menu.html"]:not(.button):hover,
+main a[href="contact.html"]:not(.button):hover {
+    background-color: var(--burgundy);
+    color: var(--cream);
+}
+
+/* Restaurant Cards */
+article {
+    background-color: var(--white);
+    border: 1px solid rgba(180,154,105,0.3);
+    padding: 24px;
+    box-shadow: 0 6px 24px rgba(41,35,33,0.06);
+}
+
+article h3 {
+    margin: 0 0 16px;
+}
+
+article p:last-child {
+    margin-bottom: 0;
+}
+
+article img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    margin: 16px 0;
+}
+
+/* Homepage Restaurant Highlights */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 24px;
+}
+
+.highlights h2 {
+    grid-column: 1 / -1;
+}
+
+.highlights article {
+    margin: 0;
+}
+
+/* Featured Food */
+.featured-food {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 24px;
+}
+
+.featured-food h2,
+.featured-food > p {
+    grid-column: 1 / -1;
+}
+
+.featured-food > p {
+    text-align: center;
+}
+
+.featured-food article {
+    margin: 0;
+}
+
+/* Other Restaurant Images */
+section > img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    margin: 24px 0;
+}
+
+/* Visit Section */
+.visit-section {
+    background-color: var(--white);
+    border-top: 3px solid var(--gold);
+    padding: 48px 32px;
+    text-align: center;
+}
+
+.visit-section p {
+    line-height: 1.9;
+}
+
+/* Menu Page */
+#appetizers,
+#salads,
+#main-courses,
+#pasta,
+#desserts,
+#brunch {
+    scroll-margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0,1fr));
+    gap: 24px;
+}
+
+#appetizers h2,
+#salads h2,
+#main-courses h2,
+#pasta h2,
+#desserts h2,
+#brunch h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+#appetizers article,
+#salads article,
+#main-courses article,
+#pasta article,
+#desserts article,
+#brunch article {
+    border-top: 3px solid var(--gold);
+    margin: 0;
+}
+
+article small {
+    color: #665B55;
+}
+
+/* Contact Page */
+address {
+    font-style: normal;
+    margin-bottom: 16px;
+}
+
+main ul {
+    padding-left: 24px;
+}
+
+main li {
+    margin-bottom: 8px;
+}
+
+iframe {
+    min-height: 400px;
+    border: 2px solid var(--gold);
+}
+
+/* Footer */
+footer {
+    background-color: var(--charcoal);
+    color: var(--cream);
+    text-align: center;
+    padding: 40px 24px;
+    border-top: 3px solid var(--gold);
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer a {
+    color: var(--cream);
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: var(--gold);
+}
+
+/* Tablet Screens */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .highlights,
+    .featured-food,
+    #appetizers,
+    #salads,
+    #main-courses,
+    #pasta,
+    #desserts,
+    #brunch {
+        grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    main {
+        padding: 32px 24px;
+    }
+
+    .hero > img {
+        height: 400px;
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+
+    h1 { font-size: 36px; }
+    h2 { font-size: 28px; }
+    h3 { font-size: 22px; }
+
+    .site-header,
+    header {
+        padding: 16px;
+    }
+
+    .header-inner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .site-brand {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .site-brand strong,
+    header strong {
+        font-size: 21px;
+    }
+
+    /* Show Hamburger Button */
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+    }
+
+    /* Closed Mobile Menu */
+    .site-nav {
+        display: grid;
+        grid-template-rows: 0fr;
+        width: 100%;
+        overflow: hidden;
+        transition: grid-template-rows 0.3s ease;
+    }
+
+    /* Open Mobile Menu */
+    .site-nav.is-open {
+        grid-template-rows: 1fr;
+    }
+
+    /* Mobile Navigation Links */
+    .site-nav ul {
+        min-height: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        width: 100%;
+        list-style: none;
+        gap: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-nav li {
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .site-nav a {
+        display: block;
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--gold);
+    }
+
+    /* Other Mobile Styling */
+    main {
+        padding: 24px 16px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    .hero > img {
+        height: 280px;
+    }
+
+    .hero-copy {
+        padding: 32px 20px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .hero-actions .button {
+        width: 100%;
+    }
+
+    .highlights,
+    .featured-food,
+    #appetizers,
+    #salads,
+    #main-courses,
+    #pasta,
+    #desserts,
+    #brunch {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    article {
+        padding: 20px;
+    }
+
+    article img {
+        height: 220px;
+    }
+
+    .visit-section {
+        padding: 32px 20px;
+    }
+
+    footer {
+        padding: 32px 16px;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+
